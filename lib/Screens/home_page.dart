@@ -7,12 +7,11 @@ class  home_page extends StatelessWidget {
     return Scaffold(
       body: SafeArea( 
         child: Column(
-      
-       crossAxisAlignment: CrossAxisAlignment.center,
+           crossAxisAlignment: CrossAxisAlignment.center,
        children: [
-        AppBar(backgroundColor: Colors.lime,
+        AppBar(backgroundColor: Colors.purpleAccent,
         centerTitle: true,
-        title: (Text('Portfolio', style: TextStyle(fontSize: 20,color: Colors.blueGrey,),)),
+        title: (Text('Portfolio', style: TextStyle(fontSize: 20,color: Colors.indigoAccent,),)),
         ),
         Container(
               height: 50,
@@ -25,16 +24,39 @@ class  home_page extends StatelessWidget {
             Container(
               height: 30,
             ),
-            Text('Aleena Jose E',style: TextStyle(fontSize: 20,color: Colors.teal),),
-            
-            Text('A second Year computer Science student who want to learn and explore development and designing',
-            style: TextStyle(fontSize: 15 ,backgroundColor: Colors.transparent ),)
-             ],
-          
-           ),
+            Container(
+            padding: EdgeInsets.all(20),
+            child: Text(
+             'Aleena Jose E' ,
+              style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold),
+            )
+            ),
+            Container(
+            padding: EdgeInsets.all(10),
+            child: Text(
+             'A second Year computer Science student who want to learn and explore development and designing',
+              style: TextStyle(
+                  color: Colors.deepPurple,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold),
+            )
+            ),
+                     ],
+          ),
            Container(
-           height:25
-            ,
+             
+           height:50,
+           child: ElevatedButton(style:ElevatedButton.styleFrom(
+                  primary: Colors.pinkAccent
+                ) , 
+                onPressed: () {  },
+                child: Text('Contact Me'
+              ) ,
+                ),
+            
            ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
